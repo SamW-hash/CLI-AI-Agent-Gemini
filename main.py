@@ -5,7 +5,7 @@ from google import genai
 from google.genai import types
 
 load_dotenv()
-
+#set key in .env
 api_key = os.environ.get("GEMINI_API_KEY")
 if api_key == None:
     raise RuntimeError("api_key not found: check your .env")
