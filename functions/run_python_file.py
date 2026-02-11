@@ -3,7 +3,7 @@ from google.genai import types
 
 schema_run_python_file = types.FunctionDeclaration(
     name="run_python_file",
-    description="Runs valid python files via subprocess at a specified file path relative to the working directory.",
+    description="Runs valid python files via subprocess at a specified file path relative to the working directory. User may use the word execute to refer to running a file.",
     parameters=types.Schema(
         type=types.Type.OBJECT,
         properties={
